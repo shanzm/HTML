@@ -1,0 +1,126 @@
+<html>
+  <head>
+    <title>table列表</title>
+  </head>
+  <body>
+    <table border="2px" cellspacing="0px" cellpadding="0px">
+      <tr>
+        <td>岐王宅里寻常见</td>
+        <td>崔九堂前几度闻</td>
+      </tr>
+      <tr>
+        <td>正是江南好风景</td>
+        <td>落花时节又逢君</td>
+      </tr>
+    </table>
+    <!-- tr标签表示行 -->
+    <!-- td标签表示单元格，不能简单理解为列，因为不是每一行的单元格个数都一样 -->
+    <!-- border表示边框宽度 -->
+    <!-- cellspacing属性表示单元格与边框（也就是单元格与单元格之间的距离） -->
+    <!-- cellpadding表示单元格中内容与单元格的距离 -->
+	
+	
+	
+    <hr />
+    <table border="2px" cellspacing="0px" cellpadding="0px" width="100px" height="50px">
+      <tr>
+        <th colspan="2">学生成绩</th> <!-- 对单元格使用colspan(column span )属性，可以使该单元格跨列 -->
+                                       <!-- 当需要强调某一个单元格内容使之显示的内容加黑且自动居中，把td标签改为th标签  -->
+      </tr>
+      
+      <tr>
+        <td>语文</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <td>数学</td>
+        <td>88</td>
+      </tr>
+    </table>
+    <!--   直接在td中使用<b></b>也可以加黑  居中使用align="center"属性 -->
+	
+	
+	
+	
+    <hr />
+    <table border="2px" cellspacing="0px" cellpadding="0px" width="200px" height="10px">
+      <tr>
+        <td rowspan="2">张三</td><!-- 使用单元格rowspan属性，实现单元格跨行，注意所跨之行，从第二个单元格开始数 -->
+        <td>语文</td>
+        <td>98</td>
+      </tr>
+      <tr>
+        <td>数学</td>
+        <td>95</td>
+      </tr>
+      <tr>
+        <td rowspan="2">李四</td>
+        <td>语文</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>数学</td>
+        <td>90</td>
+      </tr>
+    </table>
+	
+	
+	
+	
+    <hr />
+    <table border="2px" cellspacing="0px" cellpadding="0px" width="500px" height="50px">
+      <tr>
+        <td>手机卡</td>
+        <td colspan="3">办公耗材</td>
+      </tr>
+      <tr>
+        <td rowspan="3">数学</td>
+        <td>铅笔</td>
+        <td>粉笔</td>
+        <td>彩笔</td>
+      </tr>
+      <tr>
+        <td>打印</td>
+        <td>刻录</td>
+        <td>墨盒</td>
+      </tr>
+      <tr>
+        <td>笔记</td>
+        <td>钢笔</td>
+        <td>墨水</td>
+      </tr>
+    </table>
+	
+	
+	
+	
+    <hr />
+    <table border="2px" cellspacing="0px" cellpadding="0px" width="500" height="300">
+      <tr>
+        <th colspan="3">学生基本情况</th>
+      </tr>
+      <tr>
+        <td>姓名</td>
+        <td>性别</td>
+        <td>专业</td>
+      </tr>
+      <tr>
+        <td>
+          <b>刘备</b><!-- 加粗 -->
+        </td>
+        <td>男</td>
+        <td rowspan="3">计算机</td>
+      </tr>
+      <tr>
+        <td>
+          <b>曹操</b> <!-- 加粗 -->
+        </td>
+        <td>男</td>
+      </tr>
+      <tr>
+        <td align="right">孙权</td><!--使用align属性使文字居中，align属性值还可以等于left（默认） right -->
+        <td valign="top">男</td><!-- 使用valign属性使文字靠单元格上下中间。valign属性值可以等于middle（默认），top, bottom -->
+      </tr>
+    </table>
+  </body>
+</html>

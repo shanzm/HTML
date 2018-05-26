@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>表单</title>
+  </head>
+  <body>
+		<form action="httP://www.baidu.com" method="get">
+			<!-- action属性值为提交地址，method值表示提交方法，get表示会在地址栏显示提交的所有内容 -->
+			用户名：<input type="text" name="txtName" /><br/>
+			<!-- <input> 元素在 <form> 元素中使用，用来声明允许用户输入数据的 input 控件。
+			输入字段可通过多种方式改变，取决于 type 属性 -->
+			<!-- text为单行文本框 -->
+			密码：<input type="password" name="txtPwd"/><br/>
+			<!-- password为密码框 -->
+			<input type="submit" value="提交到百度"/>
+			<!-- submit为提交按钮，value不赋值则默认为”提交“ -->
+			<input type="reset" value="清空"/><br/>
+			<!-- 定义重置按钮。重置按钮会清除表单中的所有数据。 -->
+			<input type="button" value="Click me"/>
+			<!-- 定义可点击按钮（多数情况下，用于通过 JavaScript 启动脚本）。 -->
+			
+			
+			<!-- 更多type属性值参考：http://www.w3school.com.cn/tags/att_input_type.asp -->
+			
+			<hr/>
+			<fieldset>
+			<legend>性别</legend>
+			<input type="radio"/>男<br/>
+			<input type="radio"/>女<br/>
+			</fieldset>
+			<!-- 注意不加name属性则单选按钮两个可以同时选中 -->
+			<!-- fieldset对表单中的相关元素进行分组,使之相应区域的元素在一个框中 -->
+			<!-- <legend> 标签为 <fieldset> 元素定义标题。 -->
+			
+			<input type="radio" name="married"/>已婚<br/>
+			<input type="radio"name="married"/>未婚<br/>
+			<!-- 加了name属性，两个按钮的name值一样，则两个按钮只能二选一 -->
+			
+			
+			<hr/>
+			<select >
+			<option value="河北省">河北省</option>
+			<option value="江苏省">江苏省</option>
+			</select>
+			
+			<hr/>
+			<select>
+			<optgroup label="河北省">
+				<option value="廊坊">廊坊</option>
+				<option value="保定">保定</option>
+				<option value="沧州">沧州</option>
+				<option value="雄安">雄安</option>
+			</optgroup>
+			<optgroup label="江苏省">
+				<option value="苏州">苏州</option>
+				<option value="无锡">无锡</option>
+				<option value="常州">常州</option>
+				<option value="南京">南京<option>
+				</optgroup>
+			</select>
+			
+			<!-- <select> 元素用来创建下拉列表。 -->
+			<!-- <select> 元素中的 <option> 标签定义了列表中的可用选项。 -->
+			<!-- 通过 <optgroup> 标签把相关的选项组合在一起 -->
+			
+			<hr/>
+			<input type="file"></br>
+			<!-- type的属性值file定义输入字段和 "浏览"按钮，供文件上传 -->
+			
+			<hr/>
+			<textarea rows="20" cols="80">
+			<textarea>标签定义多行的文本输入控件。
+
+			文本区中可容纳无限数量的文本，其中的文本的默认字体是等宽字体（通常是 Courier）。
+
+			可以通过 cols 和 rows 属性来规定 textarea 的尺寸，不过更好的办法是使用 CSS 的 height 和 width 属性。
+			</textarea>
+			
+			
+			
+			
+		</form>
+  
+  </body>
+</html>
