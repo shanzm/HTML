@@ -1,0 +1,66 @@
+﻿/*注意一开始我们就是在htm文件中直接使用嵌入样式表，*/
+/*做完之后有单独剪切出来新建的的外联样式表*/
+/*<style type="text/css">
+。。。。。。。
+<style/>
+*/
+
+
+
+
+
+*
+{
+    margin: 0px;
+    font-size: 14px;
+}
+.divIndex
+{
+    height: 380px;
+    width: 290px;
+    background-color: #ccccd6; /*靠右：float: left;*/
+    margin: 0px auto;
+}
+.divTitle
+{
+    background-color: Blue;
+    height: 35px;
+    width: 290px;
+    color: White;
+    text-align: center;
+}
+.divTitle p/*注意这种写法，div中的标签：div.divTitle空格p*/
+{
+    font-size: 20px;
+    padding: 6px;
+}
+
+#tableAll
+{
+    width: 290px;
+    border: 1px;
+}
+#tableInfo
+{
+    width: 290px;
+    border: 1px;
+}
+th.thStation
+{
+    text-align: left;
+    border-bottom: 1px dashed #000000; /*注意th和td的做大不同就是th自动加粗，默认居中*/
+    padding: 3px;
+}
+td.tdRoadline
+{
+    color: #236eb2;
+    padding: 3px;
+    border-bottom: 1px dashed #000000; /*按照ctrl+shift+space提示写参数*/
+}
+td.tdRoadline_red /* 注意啊，使用使用clas选择器，不要省略前面的名字，省写*/
+{
+    color: red;
+    padding: 3px;
+    border-bottom: 1px dashed #000000;
+    font-weight: bold;
+}

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>003-CSS的选择器-4关联选择器</title>
+    <style type="text/css" >
+    p b
+    {
+        background-color:Red ;
+    }
+    p u
+    {
+        background-color:Blue;
+    }
+    
+    </style>
+</head>
+<body>
+    <p>
+        <b>大风起兮云飞扬，威加海内兮归故乡，安得猛士兮守四方</b></p>
+        <!--我想要只给这一句设置样式，在样式表中，我既不可以使用p标签，因为下面还有单独的p标签，也不可以使用b标签，因为下面还有单独的b标签-->
+       <!-- 所以使用关联选择器，直白的说就是用这句话的所有标签来确定这句话-->
+        <b>大风起兮云飞扬，威加海内兮归故乡，安得猛士兮守四方</b><br />
+    <p>
+        <u>大风起兮云飞扬，威加海内兮归故乡，安得猛士兮守四方</u></p>
+
+        <u>大风起兮云飞扬，威加海内兮归故乡，安得猛士兮守四方</u><br />
+    <p>
+        大风起兮云飞扬，威加海内兮归故乡，安得猛士兮守四方</p>
+    <p>
+        大风起兮云飞扬，威加海内兮归故乡，安得猛士兮守四方</p>
+</body>
+</html>

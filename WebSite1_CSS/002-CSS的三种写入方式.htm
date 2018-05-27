@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>CSS的三种写入方式</title>
+    <link href="StyleSheet_002CSS的三种写入方式的外部样式表.css" rel="stylesheet" type="text/css" />
+    <!--③外连样式表 link,注意样式都写在了————StyleSheet_002CSS的三种写入方式.css中-->
+    <!--外连样式表的优先级最低，也就是说你用其他的样式表设置样式后，再用外连样式表则不会有作用-->
+
+    <style type="text/css">
+        p
+        {   /*给所有的p标签设置样式*/
+            
+            background-color: green;
+            font-size: x-small;
+        }
+        b
+        { /*给所有的b标签设置样式*/
+            background-color: Blue;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <p style="background-color: red; font-size: xx-large; font-style: italic">
+        大风起兮云飞扬，威加海内兮归故乡，安得猛士兮守四方</p>
+    <!--①内联样式表:在标签内设置元素的样式  注意和html中的属性使用等于号不一样，CSS使用的是冒号：-->
+    <!--内联样式表优点：比较灵活，想给谁设置样式就给谁设置样式-->
+    <!--内联样式表缺点：如果要将同样的样式风格设置到网页中所有的段落上，就需要对每个<p>标签都进行重复的设置。-->
+    <p>
+        大风起兮云飞扬，威加海内兮归故乡，安得猛士兮守四方</p>
+    <br />
+    <!--②嵌入样式表(需要在head标签内写<style type=”text/css”></style>)-->
+    <!--注意内联样式表的优先级比嵌入式样式表的优先级高，比如说此处，你给在嵌入式样式表中给p标签设置了，属性，但不会影响到上面那个p标签中内联样式表的属性-->
+
+     <!--☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆
+     注意我们最常使用的就是嵌入样式表，后面的CSS选择器都是基于嵌入样式表 
+     ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆-->
+
+
+
+    <p>
+        大风起兮云飞扬，威加海内兮归故乡，安得猛士兮守四方</p>
+    <p>
+        大风起兮云飞扬，威加海内兮归故乡，安得猛士兮守四方</p>
+    <b>大风起兮云飞扬，威加海内兮归故乡，安得猛士兮守四方</b>
+
+    <hr />
+    <i>大风起兮云飞扬，威加海内兮归故乡，安得猛士兮守四方</i>
+    <u>大风起兮云飞扬，威加海内兮归故乡，安得猛士兮守四方</u>
+    <!--我们的外联样式表是针对i标签和u标签的-->
+</body>
+</html>

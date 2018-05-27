@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>盒子模型</title>
+    <style type="text/css">
+       
+        .divIndex
+        {
+            height :800px;
+            width:900px;
+            background-color:Yellow;
+            margin:10px auto;
+        }
+        
+        .divLogo
+        {
+            height:100px;
+            width:900px;
+            background-color:Orange;
+        }
+        
+        .divList
+        {
+            height: 300px;
+            width: 300px;
+            background-color:Red;
+            padding:10px;
+            /*margin:0px auto;*/
+            /*border-style:dotted;*/
+            float:left;
+        }
+        /*height盒子中内容contain的高
+        width盒子中内容contain的宽
+        padding是contain到边框border的距离（属性值赋值顺序：上 右 下 左,几个数字之间按空格分隔，没有逗号）
+        注意div盒子的大小是：
+        高=height+padding_top+padding_botyom;
+        宽=width+padding_right+padding_left
+        如果你对边框border设置了样式，还要加边框的大小
+        margin是这个盒子到他所在的大盒子的距离，或盒子与盒子之间的距离，赋值顺序和padding一样
+        float是我们所说标签对象浮动居左靠左（float:left）和浮动居右靠右(float:right)。*/
+        
+        /*c#中ctrl+shift+space会提示函数的参数，此处亦适应*/
+        
+         .divContain
+        {
+            height:300px;
+            width: 560px;/*怎么来的呢900-10-300-10-10-？-10=0*/
+            background-color:green;
+            padding:10px;
+            margin:0px auto;
+           /* border-style:dashed;*/
+            float:left;
+        }
+        .p1
+        {
+            height: 30px;
+            background-color: Gray;
+            padding: 20px;
+            border: double;
+            margin: 20px 10px;
+        }
+    </style>
+    <!--除了form表单和img图片，其他的所有标签无论是div、p、还是a都是盒子。
+        图片、表单元素一律看作是文本，它们并不是盒子。这个很好理解，
+        比如说，一张图片里并不能放东西，它自己就是自己的内容。
+       盒子模型： https://www.cnblogs.com/smyhvae/p/7256371.html-->
+</head>
+<body>
+    <div class="divIndex ">
+        <div class="divLogo">logo</div>
+        <div class="divList">
+        这是divList
+            <p class="p1">
+                这是一个p标签的内容</p>
+        </div>
+        <div class="divContain">这是divContain</div>
+    </div>
+    
+</body>
+</html>

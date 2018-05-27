@@ -1,0 +1,46 @@
+﻿*
+{
+    margin: 0 auto;
+}
+
+div.divIndex
+{
+    background-color: yellow;
+    height: 1200px;
+    width: 800px;
+    marigin: 0px auto;
+}
+
+div.divLogo
+{
+    background-color: pink;
+    height: 110px;
+    width: 800px;
+    margin: 0px auto;
+}
+
+div.divNav
+{
+    background-color:White ;
+    height:30px;
+    width :800px;
+}
+
+ul li
+{
+    float:left;
+    list-style:none;
+    width:150px;
+    line-height :25px;
+}
+/*因为样式是针对<ul>中的<li>,所以类名是——ul li
+float:left横向从左到右排列
+ list-style:none不要排列的点
+width:150px;使字能够横向排列开
+line-height :25px;行间距*/
+
+A:hover
+{
+    font-size :x-large ;
+}
+  /*超链接鼠标移动到，字号变大*/     

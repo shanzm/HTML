@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>伪元素选择器</title>
+   <!-- 伪元素选择器主要是针对这几个超链接和段落的使用-->
+    <style type="text/css">
+        A:active
+        {
+            text-decoration: none;
+        }
+        /* <!--一点击超链接，超链接底下的下换线就会消失,这有点类似Winform中的事件-->*/
+        
+        A:hover
+        {
+            font-size: x-large;
+        }
+        /* <!--一点击超链接，超链接的文字就会变大-->*/
+        
+        A:visited
+        {
+            font-size:smaller;
+        }
+        
+        P:first-line
+        {
+            font-size:large ;
+        }
+       /*<!--段落中的第一行样式-->*/
+       
+       
+        P:first-letter
+        {
+            font-size:small ;
+            background-color:Red;
+        }
+       /*<!--行中的第一个字母样式-->*/
+       
+    </style>
+</head>
+<body>
+    <a href="http://www.baidu.com" target="_black" >超链接</a><br />
+    <a href="#">超链接</a><br />
+    <a href="#">超链接</a><br />
+    <a href="#">超链接</a><br />
+    <a href="#">超链接</a><br />
+    <p>大风起兮云飞扬，未加海内兮归故乡，安得猛士兮守四方<br />
+    大风起兮云飞扬，未加海内兮归故乡，安得猛士兮守四方</p>
+</body>
+</html>

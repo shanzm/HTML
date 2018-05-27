@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>DIV</title>
+    <style type="text/css">
+        div
+        {
+            height:300px;
+            width :300px;
+        }
+        /*注意这种样式选择器的书写，先总体对div标签设置样式，再对每一个div分别设置样式*/
+        div.div1
+        {
+            background-color:red;
+            top:100px;
+            left:100px;
+            position :absolute ;
+            z-index:3;
+        }
+       /* 仅仅通过对top和left(top和left值表示div距离顶边和左边的距离)的属性赋值，
+       并不会改变div的默认位置，必须要对position赋值为absolute的，才能绝对定位
+       如果你要改变div的各层顺序(默认是后面的div层将上一层覆盖)，使用z-index，
+       z-index值越大所在层越高，最高层为你所看到的最上层*/
+        div.div2
+        {
+            background-color:blue;
+            top:130px;
+            left:130px;
+            position :absolute ;
+        }
+        div.div3
+        {
+            background-color:yellow;
+            top:160px;
+            left:160px;
+            position :absolute ;
+        }
+        div.div4
+        {
+            height:300px;
+            width:250px;
+            background-color:green;
+            right :0px;
+            bottom :0px;
+            position:fixed;
+        }
+        
+        /*-position:fixed;固定在你的显示屏幕 */
+    </style>
+</head>
+<body>
+    <div class="div1">
+    </div>
+    <div class="div2">
+    </div>
+    <div class="div3">
+    </div>
+    <br /><br /><br <br /><br /><br /><br /><br /><br 
+    <br /><br /><br /><br /><br /><br <br /><br /><br />
+    <br /><br /><br <br /><br /><br /><br /><br /><br 
+    <br /><br /><br /><br /><br /><br <br /><br /><br />
+    <br /><br /><br <br /><br /><br /><br /><br /><br 
+    <br /><br /><br /><br /><br /><br <br /><br /><br />
+    <br /><br /><br <br /><br /><br /><br /><br /><br 
+    <br /><br /><br /><br /><br /><br <br /><br /><br />
+    <br /><br /><br <br /><br /><br /><br /><br /><br 
+    <br /><br /><br /><br /><br /><br <br /><br /><br />
+    <br /><br /><br <br /><br /><br /><br /><br /><br 
+    <br /><br /><br /><br /><br /><br <br /><br /><br />
+    <br /><br /><br <br /><br /><br /><br /><br /><br 
+    <br /><br /><br /><br /><br /><br <br /><br /><br />
+    <div class="div4">
+    </div>
+</body>
+</html>
